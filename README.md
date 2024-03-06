@@ -24,4 +24,4 @@ The animation includes:
 1. Clone this repository:
 
    ```bash
-   git clone [repository_url]
+   git clone [[repository_url]](https://github.com/nafisalawalidris/Happy-Birthday.git)https://github.com/nafisalawalidris/Happy-Birthday.git
