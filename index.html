@@ -11,7 +11,7 @@
 	<meta name="description" content="Happy Birthday">
 	<meta name="robots" content="index, follow" />
 	<meta name="keywords" content="Birthday, Happy">
-	<!-- Strat of Facebook Meta -->
+	<!-- Start of Facebook Meta -->
 	<meta property="og:type" content="E-Greeting" />
 	<meta property="og:image" content="favicon.ico" />
 	<meta property="og:description" content="Wish you a very Happy Birthday">
@@ -26,6 +26,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <style>
+        .bulb-holder .bulb {
+            display: none; /* Initially hide the bulbs */
+        }
+    </style>
 </head>
 
 <body>
@@ -47,48 +52,46 @@
     	<h4 style="color:#eff706;">Birthday</h4>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h4 style="color:#705ef6;">My Dear</h4>
+    	<h4 style="color:#705ef6;">My Love</h4>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h4 style="color:#6cc712;">Friend</h4>
+    	<h4 style="color:#6cc712;">& Sweetheart</h4>
     </div>
     <div class="balloons text-center" id="b7">
-    	<h4 style="color:#0f962c;">Mubarak</h4>
+    	<h4 style="color:#0f962c;">Qudus</h4>
     </div>
 
-    <img src="Balloon-Border.png" width="100%" class="balloon-border">
- 
+    <img src="Images/Balloon-Border.png" width="100%" class="balloon-border">
 
 	<div class="container">
-		
 		<div class="row">
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_yellow"></div>
+				<img class="bulb" src="Images/bulb_yellow.png" alt="Yellow Bulb">
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_red"></div>
+				<img class="bulb" src="Images/bulb_red.png" alt="Red Bulb">
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_blue"></div>
+				<img class="bulb" src="Images/bulb_blue.png" alt="Blue Bulb">
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_green"></div>
+				<img class="bulb" src="Images/bulb_green.png" alt="Green Bulb">
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_pink"></div>
+				<img class="bulb" src="Images/bulb_pink.png" alt="Pink Bulb">
 			</div>
 			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_orange"></div>
+				<img class="bulb" src="Images/bulb_orange.png" alt="Orange Bulb">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="HBD Banner.webp" class="bannar">
-				<img src="HBD 2 Banner.webp" class="bannar">
+				<img src="Images/HBD Banner.webp" class="bannar" alt="Happy Birthday Banner">
+				<img src="Images/HBD 2 Banner.webp" class="bannar" alt="Happy Birthday Banner 2">
 			</div>
 		</div>
 		<div class="row cake-cover">
-			<div class="col-md-12 texr-center">
+			<div class="col-md-12 text-center">
 				<div class="cake">
 				  <div class="velas">
 				    <div class="fuego"></div>
@@ -149,16 +152,25 @@
 					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
 					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
 					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
+					<button class="btn btn-primary" id="light_candle">Light Candle</button>
 					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-					<button class="btn btn-primary" id="story">A mesage for you</button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+					<button class="btn btn-primary" id="story">A message for you</button>
+					<!-- <button class="btn btn-primary" id="cake_cut">Let's Cut the Cake</button> -->
 				</div>
-			</div>
+			 </div>
 		</div>
 	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript to show the bulbs when the "Turn On Lights" button is clicked
+    document.getElementById('turn_on').addEventListener('click', function() {
+        var bulbs = document.querySelectorAll('.bulb');
+        bulbs.forEach(function(bulb) {
+            bulb.style.display = 'block';
+        });
+    });
+</script>
 <script src="effect.js"></script>
 </html>
