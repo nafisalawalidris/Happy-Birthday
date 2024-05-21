@@ -30,83 +30,96 @@
         .bulb-holder .bulb {
             display: none; /* Initially hide the bulbs */
         }
+        .celebrate-img {
+            display: none; /* Initially hide the celebrate image */
+            width: 35%; /* Adjust the width as needed */
+        }
+        .message {
+            margin-top: 20px; /* Adjust this value to move the message up or down */
+        }
     </style>
 </head>
 
 <body>
-	<div class="loading"></div>
-	<audio class="song" controls loop>
-        <source src="Happy_birthday_to_you_MIDI(chosic.com).mp3"></source>
-	   Your browser isn't invited for super fun audio time.
-    </audio>
-    <div class="balloons text-center" id="b1">
-    	<h4 style="color:#f8b704;">A</h4>
-    </div>
-    <div class="balloons text-center" id="b2">
-    	<h4 style="color:#152ae0;">Very</h4>
-    </div>
-	<div class="balloons text-center" id="b3">
-    	<h4 style="color:#f50e0e;">Happy</h4>
-    </div>
-	<div class="balloons text-center" id="b4">
-    	<h4 style="color:#eff706;">Birthday</h4>
-    </div>
-	<div class="balloons text-center" id="b5">
-    	<h4 style="color:#705ef6;">My Love</h4>
-    </div>
-    <div class="balloons text-center" id="b6">
-    	<h4 style="color:#6cc712;">& Sweetheart</h4>
-    </div>
-    <div class="balloons text-center" id="b7">
-    	<h4 style="color:#0f962c;">Qudus</h4>
-    </div>
-
-    <img src="Images/Balloon-Border.png" width="100%" class="balloon-border">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<img class="bulb" src="Images/bulb_yellow.png" alt="Yellow Bulb">
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<img class="bulb" src="Images/bulb_red.png" alt="Red Bulb">
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<img class="bulb" src="Images/bulb_blue.png" alt="Blue Bulb">
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<img class="bulb" src="Images/bulb_green.png" alt="Green Bulb">
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<img class="bulb" src="Images/bulb_pink.png" alt="Pink Bulb">
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<img class="bulb" src="Images/bulb_orange.png" alt="Orange Bulb">
-			</div>
+	<div id="content">
+		<div class="loading"></div>
+		<audio class="song" controls loop>
+			<source src="Happy_birthday_to_you_MIDI(chosic.com).mp3"></source>
+			Your browser isn't invited for super fun audio time.
+		</audio>
+		<div class="balloons text-center" id="b1">
+			<h4 style="color:#f8b704;">A</h4>
 		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="Images/HBD Banner.webp" class="bannar" alt="Happy Birthday Banner">
-				<img src="Images/HBD 2 Banner.webp" class="bannar" alt="Happy Birthday Banner 2">
-			</div>
+		<div class="balloons text-center" id="b2">
+			<h4 style="color:#152ae0;">Very</h4>
 		</div>
-		<div class="row cake-cover">
-			<div class="col-md-12 text-center">
-				<div class="cake">
-				  <div class="velas">
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				  </div>
-				  <div class="cobertura"></div>
-				  <div class="bizcocho"></div>
+		<div class="balloons text-center" id="b3">
+			<h4 style="color:#f50e0e;">Happy</h4>
+		</div>
+		<div class="balloons text-center" id="b4">
+			<h4 style="color:#eff706;">Birthday</h4>
+		</div>
+		<div class="balloons text-center" id="b5">
+			<h4 style="color:#705ef6;">My Love</h4>
+		</div>
+		<div class="balloons text-center" id="b6">
+			<h4 style="color:#6cc712;">& Sweetheart</h4>
+		</div>
+		<div class="balloons text-center" id="b7">
+			<h4 style="color:#0f962c;">Qudus</h4>
+		</div>
+
+		<img src="Images/Balloon-Border.png" width="100%" class="balloon-border">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-xs-2 bulb-holder">
+					<img class="bulb" src="Images/bulb_yellow.png" alt="Yellow Bulb">
+				</div>
+				<div class="col-md-2 col-xs-2 bulb-holder">
+					<img class="bulb" src="Images/bulb_red.png" alt="Red Bulb">
+				</div>
+				<div class="col-md-2 col-xs-2 bulb-holder">
+					<img class="bulb" src="Images/bulb_blue.png" alt="Blue Bulb">
+				</div>
+				<div class="col-md-2 col-xs-2 bulb-holder">
+					<img class="bulb" src="Images/bulb_green.png" alt="Green Bulb">
+				</div>
+				<div class="col-md-2 col-xs-2 bulb-holder">
+					<img class="bulb" src="Images/bulb_pink.png" alt="Pink Bulb">
+				</div>
+				<div class="col-md-2 col-xs-2 bulb-holder">
+					<img class="bulb" src="Images/bulb_orange.png" alt="Orange Bulb">
 				</div>
 			</div>
-		</div>
-		<div class="row message">
-			<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<img src="Images/HBD Banner.webp" class="bannar" alt="Happy Birthday Banner">
+					<img src="Images/HBD 2 Banner.webp" class="bannar" alt="Happy Birthday Banner 2">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<img src="Images\Qud Image.jpg" class="celebrate-img" alt="Celebrate"> <!-- Add the celebrate image here -->
+				</div>
+			</div>
+			<div class="row cake-cover">
+				<div class="col-md-12 text-center">
+					<div class="cake">
+					  <div class="velas">
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+					  </div>
+					  <div class="cobertura"></div>
+					  <div class="bizcocho"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row message">
+				<div class="col-md-12">
 				<p>On this special day...</p>
 				<p>as radiant as the rest,</p>
 				<p>you realize</p>
@@ -152,24 +165,26 @@
 					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
 					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
 					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle">Light Candle</button>
+					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
 					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
 					<button class="btn btn-primary" id="story">A message for you</button>
 					<!-- <button class="btn btn-primary" id="cake_cut">Let's Cut the Cake</button> -->
 				</div>
-			 </div>
+			</div>
 		</div>
 	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script>
-    // JavaScript to show the bulbs when the "Turn On Lights" button is clicked
+    // JavaScript to show the bulbs and celebrate image when the "Turn On Lights" button is clicked
     document.getElementById('turn_on').addEventListener('click', function() {
         var bulbs = document.querySelectorAll('.bulb');
         bulbs.forEach(function(bulb) {
             bulb.style.display = 'block';
         });
+        var celebrateImg = document.querySelector('.celebrate-img');
+        celebrateImg.style.display = 'block';
     });
 </script>
 <script src="effect.js"></script>
